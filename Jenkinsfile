@@ -3,12 +3,12 @@ pipeline{
 	stages{
 		stage("Run Test"){
 			steps{
-				bat "docker-compose up"
+				bat "docker-compose up --no-colors"
 			}
 		}
 		stage("Bring Grid Down"){
 			steps{
-				bat "docker-compose down"
+				bat "docker-compose down --no-colors"
 			}
 		}
 	}
