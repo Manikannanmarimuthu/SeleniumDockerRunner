@@ -1,9 +1,7 @@
 version: "3"
 services:
   hub:
-    image: selenium/hub:3.14
-    ports:
-      - "4444:4444"
+    image: selenium/hub:3.14   
   chrome:
     image: selenium/node-chrome:3.14
     depends_on:
@@ -27,7 +25,7 @@ services:
       - HUB_HOST=hub
       - MODULE=testng_search.xml
     volumes:
-      - ./test-duck:/usr/share/dockertest/test-output
+      - D:/Docker/Workspace/TestRunner/Output/test-duck:/usr/share/dockertest/test-output
   book-ticket-module:
     image: manikannanmarimuthu/sel-docker
     depends_on:
@@ -38,4 +36,4 @@ services:
       - HUB_HOST=hub
       - MODULE=testng_mercury.xml
     volumes:
-      - ./test-mercury:/usr/share/dockertest/test-output
+      - D:/Docker/Workspace/TestRunner/Output/test-duck:/usr/share/dockertest/test-output
