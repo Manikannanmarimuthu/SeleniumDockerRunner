@@ -11,11 +11,11 @@ pipeline{
 				bat "docker-compose up search-module book-ticket-module"
 			}
 		}
+	}	
 	post{
 		always{
 		   archiveArtifacts artifacts: 'D:/Docker/Workspace/TestRunner/Output/**'
 				bat "docker-compose down"
-			}
 		}
 	}
 }
