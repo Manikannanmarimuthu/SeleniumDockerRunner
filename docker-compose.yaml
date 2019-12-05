@@ -36,4 +36,4 @@ services:
       - HUB_HOST=hub
       - MODULE=testng_mercury.xml
     volumes:
-      - D:/Docker/Workspace/TestRunner/Output/test-duck:/usr/share/dockertest/test-output
+      - D:/Docker/Workspace/TestRunner/Output/test-mercury:/usr/share/dockertest/test-output
