@@ -25,7 +25,7 @@ services:
       - HUB_HOST=hub
       - MODULE=testng_search.xml
     volumes:
-      - D:/Docker/Workspace/TestRunner/Output/test-duck:/usr/share/dockertest/test-output
+      - D:/Docker/Workspace/Jenkins/Output/test-duck:/usr/share/dockertest/test-output
   book-ticket-module:
     image: manikannanmarimuthu/sel-docker
     depends_on:
@@ -36,4 +36,4 @@ services:
       - HUB_HOST=hub
       - MODULE=testng_mercury.xml
     volumes:
-      - D:/Docker/Workspace/TestRunner/Output/test-mercury:/usr/share/dockertest/test-output
+      - D:/Docker/Workspace/Jenkins/Output/test-mercury:/usr/share/dockertest/test-output
